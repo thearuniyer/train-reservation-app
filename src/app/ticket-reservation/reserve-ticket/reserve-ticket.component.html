@@ -1,0 +1,77 @@
+<div *ngIf="flag">
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit(bookingForm)">
+        <label class="center-block">
+            Number of Seats:
+            <input type="number" class="form-control" formControlName="count"/>
+        </label>
+        <button type="submit">Reserve</button>
+        <div>{{error}}</div>
+    </form>
+</div>
+<div class="coach-container" *ngIf="!flag">
+
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="1">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="2">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="3">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="4">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="5">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="6">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="7">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="8">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="9">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="10">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="11">
+</seat-row>
+<seat-row 
+  [bookingInfoSeats]="bookingInfo.seats" 
+  [bookingFormInfo]="bookingForm" 
+  [rowNo]="12">
+</seat-row>
+
+  <div class="new-booking">
+    <button (click)="openBookingForm()"> New Booking</button>
+  </div>
+</div>

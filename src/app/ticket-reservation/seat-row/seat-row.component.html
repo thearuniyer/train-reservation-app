@@ -1,0 +1,18 @@
+<!-- <div class="seat-row">
+  <div>
+    <div class="seat">
+      <label class="seat-label">
+        1
+      </label>
+    </div>
+  </div>
+</div> -->
+
+<div class="seat-row">
+  <div  *ngFor ="let seat of bookingInfoSeats">
+    <div  class="seat" [ngClass] = "seat.seatNo === ((seat.row - 1)*7 + 3) ? 'divide-category': ''"  *ngIf="seat.row === rowNo" >
+      <label class="seat-label" [ngClass] = "seat.status=== 'booked' ? (bookingFormInfo.controls['name'].value === seat.bookedBy ? 'selected' : 'booked'): 'available'">
+        {{seat.seatNo}}</label>
+    </div>
+  </div>
+</div>
