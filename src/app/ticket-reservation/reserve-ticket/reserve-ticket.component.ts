@@ -127,7 +127,6 @@ export class ReserveTicketComponent implements OnInit{
       return bookseats;
     } else {
       const removeIndex = bookseats.splice(-1, 1);
-
       return removeIndex;
     }
   }

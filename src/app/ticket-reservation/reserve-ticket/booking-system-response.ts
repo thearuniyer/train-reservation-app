@@ -1,7 +1,4 @@
-import {
-  ReserveTicketResponseModel,
-  TrainSeatInfoModel,
-} from '../models/reserve-ticket.model';
+import { ReserveTicketResponseModel } from '../models/reserve-ticket.model';
 
 export const mockResponse: ReserveTicketResponseModel = {
   type: 'train',

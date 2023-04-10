@@ -7,9 +7,15 @@ import { SeatRowComponent } from './seat-row/seat-row.component';
 @NgModule({
   imports: [
     CommonModule,
-     ReactiveFormsModule
+    ReactiveFormsModule
   ],
-  declarations: [ReserveTicketComponent, SeatRowComponent],
-  exports: [ReserveTicketComponent, SeatRowComponent]
+  declarations: [
+    ReserveTicketComponent, 
+    SeatRowComponent
+  ],
+  exports: [
+    ReserveTicketComponent, 
+    SeatRowComponent
+  ]
 })
 export class TicketReservationModule { }
