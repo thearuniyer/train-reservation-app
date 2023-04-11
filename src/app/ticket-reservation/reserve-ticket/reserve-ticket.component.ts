@@ -35,7 +35,7 @@ export class ReserveTicketComponent implements OnInit{
   public onSubmit(formValues: FormGroup): void {
     const userName: string = formValues.controls['name'].value;
     const requiredSeats: number = parseInt(formValues.controls['count'].value);
-    if(requiredSeats > 7) {
+    if(requiredSeats > 7 || requiredSeats < 0) {
       this.error = "One person can reserve up to 7 seats at a time!";
     }
     else if(requiredSeats > 0) {
@@ -57,10 +57,8 @@ export class ReserveTicketComponent implements OnInit{
 
     seatsArray = this.checkSeatingPriority(count, 3);
       if (seatsArray.length !== 0) {
-        console.log("Line 90")
         this.bookSeat(seatsArray, name);
       } else {
-        console.log("Line 93")
         this.bookSeat(this.getRandomSeats(count), name);
       }
   }
