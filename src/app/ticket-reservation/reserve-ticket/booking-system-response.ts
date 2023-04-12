@@ -86,9 +86,9 @@ export const mockResponse: ReserveTicketResponseModel = {
 
     {
       seatNo: 11,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 2,
     },
@@ -199,17 +199,17 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 25,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 4,
     },
     {
       seatNo: 26,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 4,
     },
@@ -255,17 +255,17 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 32,
-      status: 'booked',
+      status: 'available',
       category: 3,
-      bookedBy: 'xyz',
+      bookedBy: '',
 
       row: 5,
     },
     {
       seatNo: 33,
-      status: 'booked',
+      status: 'available',
       category: 3,
-      bookedBy: 'xyz',
+      bookedBy: '',
 
       row: 5,
     },
@@ -295,9 +295,9 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 37,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 6,
     },
@@ -400,17 +400,17 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 50,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 8,
     },
     {
       seatNo: 51,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 8,
     },
@@ -505,9 +505,9 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 63,
-      status: 'booked',
+      status: 'available',
       category: 3,
-      bookedBy: 'xyz',
+      bookedBy: '',
 
       row: 9,
     },
@@ -545,6 +545,14 @@ export const mockResponse: ReserveTicketResponseModel = {
     },
     {
       seatNo: 68,
+      status: 'available',
+      category: 3,
+      bookedBy: '',
+
+      row: 10,
+    },
+    {
+      seatNo: 69,
       status: 'booked',
       category: 3,
       bookedBy: 'guest',
@@ -552,18 +560,10 @@ export const mockResponse: ReserveTicketResponseModel = {
       row: 10,
     },
     {
-      seatNo: 69,
-      status: 'available',
-      category: 3,
-      bookedBy: '',
-
-      row: 10,
-    },
-    {
       seatNo: 70,
-      status: 'available',
+      status: 'booked',
       category: 3,
-      bookedBy: '',
+      bookedBy: 'guest',
 
       row: 10,
     },

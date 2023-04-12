@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+
+:root {
+    --clr-bright-green: #55f991;
+    --clr-dark-green: #10b981;
+  
+    --clr-very-dark-blue: #1f2937;
+    --clr-dark-blue: #273549;
+    --clr-medium-grey: #d5d4d8;
+  
+    --ff-main: "Karla", sans-serif;
+    --ff-serif: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--ff-serif);
+    color: white;
+    background-color: #1c1c1c;
+}

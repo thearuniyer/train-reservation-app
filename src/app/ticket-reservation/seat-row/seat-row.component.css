@@ -6,7 +6,7 @@
     -ms-flex-pack: justify;
     min-width: 200px;
     clear: both;
-    margin: 3px 0;
+    margin: 8px 0;
   }
   
   .divide-category {
@@ -20,29 +20,33 @@
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    color: #4D455D;
     line-height: 1.5rem;
     padding: 4px 0;
-    border-radius: 5px;
+    border-radius: 2px;
     animation-duration: 300ms;
     animation-fill-mode: both;
     border: 1px solid;
   }
   
   .seat {
-    width: 20px;
+    width: 30px;
     padding: 0 5px;
   }
   
   .selected {
-    background: blue;
+    /* background-color: #F5E9CF; */
+    background-color: #FCF3CA;
   }
   
   .booked {
-    background: grey;
+    /* background: #E96479; */
+    background-color: #FF6473;
   }
   
   .available {
-    background: limegreen;
+    /* background: #7DB9B6; */
+    background-color: #66BFBF;
   }
   
   .new-booking {

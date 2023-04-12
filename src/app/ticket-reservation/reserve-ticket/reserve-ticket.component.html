@@ -1,12 +1,15 @@
 <div *ngIf="flag">
     <form [formGroup]="bookingForm" (ngSubmit)="onSubmit(bookingForm)">
         <label class="center-block">
-            Number Of Seats:
-            <input type="number" class="form-control" formControlName="count"/>
+            Number Of Seats: 
+            <br>
+            &nbsp;
+            <br>
+            <input type="number" class="seat-input" formControlName="count"/>
         </label>
         <br>
         <div class="btn-block">
-          <button class="reserve-btn" type="submit">RESERVE</button>
+          <button class="btn" type="submit">RESERVE</button>
         </div>
         <div>
           <p class="error">
@@ -78,6 +81,6 @@
   </seat-row>
 
   <div class="new-booking">
-    <button class="reserve-btn" (click)="openBookingForm()"> New Booking</button>
+    <button class="btn" (click)="openBookingForm()"> New Booking</button>
   </div>
 </div>
