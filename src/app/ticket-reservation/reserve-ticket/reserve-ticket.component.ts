@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { mockResponse } from '../data/booking-system-response';
 import { ReserveTicketResponseModel, TrainSeatInfoModel } from '../models/reserve-ticket.model';
-import { mockResponse } from './booking-system-response';
 @Component({
   selector: 'reserve-ticket',
   templateUrl: './reserve-ticket.component.html',
@@ -58,7 +58,8 @@ export class ReserveTicketComponent implements OnInit{
     seatsArray = this.checkSeatingPriority(count, 3);
       if (seatsArray.length !== 0) {
         this.bookSeat(seatsArray, name);
-      } else {
+      }
+      else {
         this.bookSeat(this.getRandomSeats(count), name);
       }
   }

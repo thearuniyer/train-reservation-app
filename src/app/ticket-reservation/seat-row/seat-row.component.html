@@ -7,7 +7,7 @@
     >
       <label 
         class="seat-label"
-        [ngClass] = "seat.status=== 'booked' ? (bookingFormInfo.controls['name'].value === seat.bookedBy ? 'selected' : 'booked'): 'available'"
+        [ngClass] = "seat.status === 'booked' ? (bookingFormInfo.controls['name'].value === seat.bookedBy ? 'selected' : 'booked'): 'available'"
       >
         {{seat.seatNo}}
       </label>

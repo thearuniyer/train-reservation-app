@@ -21,9 +21,13 @@
   border: none;
   text-align: center;
   font-family: var(--ff-main);
-  font-size: 300%;
+  font-size: 350%;
   font-weight: 600;
-  
+  color: #1c1c1c;
+}
+
+.seat-input:focus {
+  outline-color: var(--clr-dark-green);
 }
 
 .coach-container {
