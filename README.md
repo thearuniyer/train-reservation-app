@@ -1,26 +1,50 @@
-# TrainReservationApp
+# Train Reservation App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+This is a web application for booking train tickets. It allows users to search for trains, view their schedules, and book tickets for a particular journey. The app also provides functionality for canceling tickets and managing reservations.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The app has the following features:
 
-## Code scaffolding
+1. There are 80 seats in a coach of a train with only 7 seats in a row and last row of only 3 seats. 
+2. One person can reserve up to 7 seats at a time.
+3. If person is reserving seats, the priority will be to book them in one row.
+4. If seats are not available in one row then the booking should be done in such a way that the nearby seats are booked.
+5. User can book as many tickets as s/he wants until the coach is full. 
+6. There is no login functionality for this application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+
+1. Clone this repository: `git clone https://github.com/thearuniyer/train-reservation-app.git`
+2. Run `npm install` to install all node modules
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Technologies Used
+
+The app is built using the following technologies:
+
+- **Front-end**: HTML, CSS, Typescript, Angular
+- **Other**: Git, Node.js
+
+## Databse Model
+
+The model for the database is signified with `TrainSeatInfoModel` as given below:
+
+```
+export class TrainSeatInfoModel {
+  public seatNo: number;
+  public status: string;
+  public category: number;
+  public bookedBy: string;
+  
+  public row: number;
+}
+```
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
