@@ -1,6 +1,6 @@
 import { ReserveTicketResponseModel } from '../models/reserve-ticket.model';
 
-export const mockResponse: ReserveTicketResponseModel = {
+export const TICKETS: ReserveTicketResponseModel = {
   type: 'train',
   seats: [
     {
@@ -86,9 +86,9 @@ export const mockResponse: ReserveTicketResponseModel = {
 
     {
       seatNo: 11,
-      status: 'booked',
+      status: 'available',
       category: 3,
-      bookedBy: 'guest',
+      bookedBy: '',
 
       row: 2,
     },

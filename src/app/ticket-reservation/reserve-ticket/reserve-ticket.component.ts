@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { mockResponse } from '../data/booking-system-response';
+import { TicketsService } from 'src/app/tickets.service';
 import { ReserveTicketResponseModel, TrainSeatInfoModel } from '../models/reserve-ticket.model';
 @Component({
   selector: 'reserve-ticket',
@@ -16,8 +16,13 @@ export class ReserveTicketComponent implements OnInit{
   public error:string; 
   public res: any;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private ticketService: TicketsService) {
     this.initateForm();
+  }
+
+  getTickets(): void {
+    this.ticketService.getTickets()
+        .subscribe(bookingInfo => this.bookingInfo = bookingInfo)
   }
   
   private initateForm(): void {
@@ -28,7 +33,7 @@ export class ReserveTicketComponent implements OnInit{
   }
 
   public ngOnInit(): void {
-    this.bookingInfo = mockResponse;
+    this.getTickets();
     this.availablseats = this.getSeatsAvailable();
   }
 
